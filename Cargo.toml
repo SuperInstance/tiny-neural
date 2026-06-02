@@ -1,0 +1,16 @@
+[package]
+name = "tiny-neural"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/SuperInstance/tiny-neural"
+description = "Tiny neural network library in Rust — from-scratch tensors, layers, backprop, optimizers. No GPU, no frameworks, just math."
+
+[dependencies]
+nalgebra = { version = "0.33", features = ["serde-serialize"] }
+serde = { version = "1", features = ["derive"] }
+rand = "0.8"
+rand_distr = "0.4"
+
+[dev-dependencies]
+approx = "0.5"
